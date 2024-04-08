@@ -1,1 +1,1 @@
-# a-journey-into-reactjs
+# A Journey Exploring ReactJS
