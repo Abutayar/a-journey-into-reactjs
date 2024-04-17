@@ -56,13 +56,14 @@ function App() {
   }
 
   function handleProjectDeletion(project) {
-    if (projects[updatedData.id]) {
+    if (projects[project.id]) {
       setProjects(previousProjects => {
         const newProjects = [...previousProjects.map(project => Object.create(project))]
         newProjects.splice(project.id,1);
         return newProjects;
       }
       )
+      setSelectedProject(null)
     }
   }
 

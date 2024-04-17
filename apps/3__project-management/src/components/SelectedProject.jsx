@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import logo from "../assets/no-projects.png";
-export default function SelectedProject({ openForm, project, onProjectUpdate }) {
+export default function SelectedProject({ openForm, project, onProjectUpdate, onDelete }) {
 
     if (!project) return <section className="h-full flex flex-col items-center justify-center" >
         <img src={logo} className="w-16" alt="no project icon" />
